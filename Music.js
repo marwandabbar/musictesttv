@@ -7,7 +7,7 @@ const getYoutubeID = require('get-youtube-id');
 const fetchVideoInfo = require('youtube-info');
 
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
-const prefix = '1';
+const prefix = '<';
 client.on('ready', function() {
 	console.log(`i am ready ${client.user.username}`);
 });
@@ -50,7 +50,7 @@ var download = function(uri, filename, callback) {
 
 
 const developers = ["403641716797603853","403640956571615243","468831893773746196"]
-const adminprefix = "1";
+const adminprefix = "<";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
